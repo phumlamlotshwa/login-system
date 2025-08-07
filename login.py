@@ -22,3 +22,6 @@ confirm = input("confirm password: ")
 
 if password != confirm:
     print("Password does not match. ")
+
+    with open("users.txt", "a") as file:
+        file.write(f"{username}, {password}")
