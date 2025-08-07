@@ -2,6 +2,8 @@
 
 while True:
     print("Please enter an option")
-    print("Already have an account? Login")
-    print("Dont have an account? Register")
-    print("Exit")
+    print("1. Already have an account? Login")
+    print("2 .Dont have an account? Register")
+    print("3. Exit")
+
+    choice = input("Enter your choice(1/2/3): ")
