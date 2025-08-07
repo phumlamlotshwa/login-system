@@ -7,3 +7,7 @@ while True:
     print("3. Exit")
 
     choice = input("Enter your choice(1/2/3): ")
+
+    if choice == "1":
+        print("Please enter login details")
+    elif
