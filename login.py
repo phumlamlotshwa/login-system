@@ -14,3 +14,6 @@ while True:
         print("Please register your account")
     elif choice == "3":
         print("Exiting Goodbye!")
+        break
+    else:
+        print("Invalid choice")
