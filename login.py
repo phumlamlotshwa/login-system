@@ -10,4 +10,5 @@ while True:
 
     if choice == "1":
         print("Please enter login details")
-    elif
+    elif choice == "2":
+        print("Please register your account")
