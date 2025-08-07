@@ -15,3 +15,7 @@ elif choice == "3":
     
 else:
     print("Invalid")
+
+username = input("username: ")
+password = input("password: ")
+confirm = input("confirm password: ")
