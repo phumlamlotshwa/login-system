@@ -19,3 +19,6 @@ else:
 username = input("username: ")
 password = input("password: ")
 confirm = input("confirm password: ")
+
+if password != confirm:
+    print("Password does not match. ")
