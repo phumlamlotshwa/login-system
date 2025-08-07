@@ -15,13 +15,16 @@ elif choice == "3":
     
 else:
     print("Invalid")
+def register():
+    print("Register! ")
+    username = input("username: ")
+    password = input("password: ")
+    confirm = input("confirm password: ")
 
-username = input("username: ")
-password = input("password: ")
-confirm = input("confirm password: ")
-
-if password != confirm:
-    print("Password does not match. ")
+    if password != confirm:
+        print("Password does not match. ")
 
     with open("users.txt", "a") as file:
         file.write(f"{username}, {password}")
+
+    print("Registration successful! Please login below")
