@@ -1,4 +1,7 @@
 def login():
+    print("login")
+    username = input("username: ")
+    pass
 
 print("Please enter an option")
 print("1. Already have an account? Login")
