@@ -1,8 +1,27 @@
+
+def register():
+    
+    print("Register! ")
+    username = input("username: ")
+    password = input("password: ")
+    confirm = input("confirm password: ")
+
+    if password != confirm:
+        print("Password does not match. ")
+        return
+
+    with open("users.txt", "a") as file:
+        file.write(f"{username}, {password}\n")
+
+    print("Registration successful! Please login below")
+    login() 
+
+
+
 def login():
     print("login")
     username = input("username: ")
     password = input("Password: ")
-
 
     try:
         with open("users.txt", "r") as file:
@@ -28,25 +47,12 @@ print("3. Exit")
 choice = input("Enter your choice(1/2/3): ")
 
 if choice == "1":
-    print("Please enter login details")
+    login()
 elif choice == "2":
-    print("Please register your account")
+    register()
 elif choice == "3":
     print("Exiting Goodbye!")
     
 else:
     print("Invalid")
-def register():
-    print("Register! ")
-    username = input("username: ")
-    password = input("password: ")
-    confirm = input("confirm password: ")
 
-    if password != confirm:
-        print("Password does not match. ")
-
-    with open("users.txt", "a") as file:
-        file.write(f"{username}, {password}")
-
-    print("Registration successful! Please login below")
-    login() 
