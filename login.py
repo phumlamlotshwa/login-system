@@ -1,3 +1,4 @@
+def login():
 
 print("Please enter an option")
 print("1. Already have an account? Login")
@@ -28,3 +29,4 @@ def register():
         file.write(f"{username}, {password}")
 
     print("Registration successful! Please login below")
+    login() 
