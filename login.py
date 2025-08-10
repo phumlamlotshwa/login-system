@@ -6,7 +6,11 @@ def login():
 
     try:
         with open("users.txt", "r") as file:
-            
+            lines = file.readlines()
+    except FileNotFoundError:
+        print("Account not found. Register to create an account")
+        return
+
 
 print("Please enter an option")
 print("1. Already have an account? Login")
