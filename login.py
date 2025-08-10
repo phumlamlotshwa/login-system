@@ -1,7 +1,12 @@
 def login():
     print("login")
     username = input("username: ")
-    pass
+    password = input("Password: ")
+
+
+    try:
+        with open("users.txt", "r") as file:
+            
 
 print("Please enter an option")
 print("1. Already have an account? Login")
