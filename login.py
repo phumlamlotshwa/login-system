@@ -10,6 +10,9 @@ def login():
     except FileNotFoundError:
         print("Account not found. Register to create an account")
         return
+    
+    for line in lines:
+        stored_username, stored_password = line.strip().split(", ")
 
 
 print("Please enter an option")
