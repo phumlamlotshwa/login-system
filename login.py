@@ -16,6 +16,8 @@ def login():
         if username == stored_username and password == stored_password:
             print("Login successful! Welcome, ", username)
             return
+        
+    print("login failed, incorrect username or password")
 
 
 print("Please enter an option")
